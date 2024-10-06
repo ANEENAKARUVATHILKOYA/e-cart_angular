@@ -1,0 +1,83 @@
+<!------categories-->
+ <div class="container">
+
+    <div  class="container row text-center"> 
+        
+            <div class="p-4 col-3  c">
+                <a (click)="filter('')">
+                <img  style="height:150px" class="w-90  rounded-circle" src="https://i.postimg.cc/PJZ9CZjL/download-12.jpg" alt="">
+                <h4 class="pt-2">View All</h4>
+            </a>
+            </div>
+            
+
+        
+        
+        <div class="p-4 col-3  c">
+            <a (click)="filter(1)">
+            <img  style="height:150px" class="w-90  rounded-circle" src="https://i.postimg.cc/J0XJ7vXR/red-fancy-silk-designer-saree-trendoye-TSNJ-HFT-SLSY2-7501-1200x.webp" alt="">
+            <h4 class="pt-2">Designer Saree</h4>
+        </a>
+        </div >
+        
+
+        
+        <div class="p-4 col-3  c">
+            <a (click)="filter(2)">
+            <img  style="height:150px" class="w-90  rounded-circle" src="https://i.postimg.cc/Nff9zKJg/images-2.jpg" alt="">
+            <h4 class="pt-2">Kurti Set</h4>
+        </a>
+        </div>
+        
+
+        
+        <div class="p-4 col-3  c">
+            <a (click)="filter(3)">
+            <img  style="height:150px" class="w-90  rounded-circle" src="https://i.postimg.cc/TP9h0GVy/download-1.jpg" alt="">
+            <h4 class="pt-2">Bags</h4>
+        </a>
+        </div>
+        
+
+        
+        <div class="p-4 col-3  c">
+            <a (click)="filter(4)">
+            <img  style="height:150px" class="w-90  rounded-circle" src="https://i.postimg.cc/ThMC9rxJ/images-6.jpg" alt="">
+            <h4 class="pt-2">Watches</h4>
+        </a> 
+        </div>
+        
+        
+    </div>
+ </div>
+
+
+
+  <!-- Section-->
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="d1" *ngFor="let i of filterProducts"   class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img   style="height: 350px;" class="card-img-top" src="{{i.productImage}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <!-- Product price-->
+                              Price: RS {{i.price}}/-
+                           <p>Rating <strong>{{i.rating}}</strong></p>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-secondary mt-auto"  href="products/view_product/{{i.id}}">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>

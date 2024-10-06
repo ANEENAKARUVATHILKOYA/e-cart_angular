@@ -1,0 +1,12 @@
+#d1{
+    transition: 1s ease-in-out;
+}
+
+#d1:hover{
+      transform: scale(1.1);
+}
+
+.c:hover{
+     background-color:rgba(213, 129, 194, 0.334) ;
+     border-radius: 40px;
+}

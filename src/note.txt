@@ -1,0 +1,13 @@
+Lazy-Loading module
+------------------------
+provide less loading time for high traffic pages
+
+ng g module <module_name> --route <module_name> --module app.module
+
+
+
+json -  server
+------------------
+npm i --save json-server  - for installation
+
+npx json-server --watch db.json --port 3000   - run server in server file location
