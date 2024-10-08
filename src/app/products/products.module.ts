@@ -9,6 +9,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import {HttpClientModule}  from '@angular/common/http';
+import { FilterPipe } from './pipe/filter.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {HttpClientModule}  from '@angular/common/http';
     ViewProductComponent,
     AddProductComponent,
     EditProductComponent,
-    DeleteProductComponent
+    DeleteProductComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,

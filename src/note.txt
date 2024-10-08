@@ -11,3 +11,24 @@ json -  server
 npm i --save json-server  - for installation
 
 npx json-server --watch db.json --port 3000   - run server in server file location
+
+
+
+Behaviour subject
+------------------------
+to share data between modules
+
+rxjs - reactive extension for js :
+          .library of behaviour subject
+          .used to handle the async implementations  in angular 
+
+
+
+Activated Route in angular
+-------------------------------------
+used to access the data from URLs -(access params)
+
+class   - ActivatedRoute
+method  - params() - it is a an asynchronous method
+
+
