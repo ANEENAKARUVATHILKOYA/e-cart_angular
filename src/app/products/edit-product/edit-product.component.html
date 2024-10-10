@@ -1,1 +1,26 @@
-<p>edit-product works!</p>
+
+<div class="container w-50 text-center">
+    
+    <h3>Edit Product</h3>
+   
+    <form  (ngSubmit)="updateProduct(updateProductForm)" #updateProductForm="ngForm"  class="container p-5">
+
+        <input  [(ngModel)]="pdata.id" type="text" class="form-control mt-3 p-2" placeholder="id" name="pin" id="pid" >
+        <input  [(ngModel)]="pdata.productName" type="text" class="form-control mt-3 p-2" placeholder="Name" name="pinname" id="pid">
+        <input  [(ngModel)]="pdata.categoryId" type="text" class="form-control mt-3 p-2" placeholder="Category Id" name="pinid" id="pid">
+        <input  [(ngModel)]="pdata.description" type="text" class="form-control mt-3 p-2" placeholder="Description" name="pindescription" id="pid">
+        <input  [(ngModel)]="pdata.price" type="text" class="form-control mt-3 p-2" placeholder="Price" name="pinprice" id="pid">
+        <input  [(ngModel)]="pdata.isAvailable" type="text" class="form-control mt-3 p-2" placeholder="Is Available" name="pinavailable" id="pid">
+        <input  [(ngModel)]="pdata.productImage"type="text" class="form-control mt-3 p-2" placeholder="Product image" name="pinimage" id="pid">
+        <input  [(ngModel)]="pdata.rating" type="text" class="form-control mt-3 p-2" placeholder="Rating" name="pinrating" id="pid">
+        <input  [(ngModel)]="pdata.review" type="text" class="form-control mt-3 p-2" placeholder="Review" name="pinreview" id="pid">
+        <input  [(ngModel)]="pdata.vendorName" type="text" class="form-control mt-3 p-2" placeholder="Vendor Name" name="pinvendoe" id="pid">
+        <input   type="text" class="form-control mt-3 p-2" placeholder="Warrenty" name="pin" id="pid"> 
+
+        <button   type="submit"class="p-2 mt-3"> Update </button>
+
+ 
+    </form>
+</div>
+
+  
